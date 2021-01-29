@@ -1,13 +1,9 @@
 {
     "name": "deadsimple/vtooltiplibrary",
-    "description": "",
+    "description": "A deadsimple module to use v-tooltip in your Modern Magento 2 Vue Projects",
     "require": {
-        "php": "~5.5.0|~5.6.0|~7.0.0",
-
-        "magento/magento-composer-installer": "*"
-    },
-    "suggest": {
-
+        "magento/framework": ">=100.1.0",
+        "deadsimple/vuelibrary": ">=1.0"
     },
     "type": "magento2-module",
     "version": "0.1.0",

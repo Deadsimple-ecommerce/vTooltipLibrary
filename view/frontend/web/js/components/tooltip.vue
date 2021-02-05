@@ -1,5 +1,5 @@
 <template>
-    <span v-if="showTooltip" v-tooltip="{content, offset}"><slot /></span>
+    <span v-if="showTooltip" v-tooltip="{content, offset, trigger}"><slot /></span>
 </template>
 
 <script>
@@ -10,6 +10,11 @@ define([
 
     Vue.component('tooltip', {
         template: template,
+        data() {
+            return {
+                trigger: window.innerWidth > 768 ? 'hover' : 'click'
+            }
+        },
         directives: {
             tooltip: VTooltip.VTooltip,
         },
